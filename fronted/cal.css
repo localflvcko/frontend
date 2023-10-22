@@ -1,0 +1,79 @@
+.calculator {
+    height: 80px;
+    width: 250px;
+    background-color: #3498db; /* 蓝色背景 */
+}
+
+#dots {
+    display: flex;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    color: #fff; /* 白色字体 */
+    font-size: large;
+}
+
+.show {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 50px;
+    width: 242px;
+    font-size: 2em;
+    color: #e74c3c; /* 红色字体 */
+    margin-top: 7px;
+    margin-right: 2px;
+}
+
+.form {
+    color: #f1c40f; /* 黄色字体 */
+}
+
+.flex {
+    display: flex;
+}
+
+.dot {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#top .button {
+    background-color: #27ae60; /* 绿色按钮背景 */
+}
+
+#num .button {
+    background-color: #8e44ad; /* 紫色按钮背景 */
+}
+
+aside-right .button {
+    background-color: #f39c12; /* 橙色按钮背景 */
+}
+
+main {
+    width: 250px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+#num {
+    flex-wrap: wrap;
+}
+
+#top {
+    flex-wrap: wrap;
+}
+
+aside-right {
+    flex-direction: column;
+}
+
+aside-left {
+    width: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

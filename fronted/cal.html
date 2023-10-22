@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算器</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <!-- Calculator Container -->
+    <div class="calculator">
+        <input class="show" id="show" placeholder="0">
+    </div>
+
+    <main class="flex">
+        <!-- Left Panel: Buttons for Operations and Functions -->
+        <aside class="flex">
+            <div class="top flex">
+                <input class="button" type="button" value="CE">
+                <input class="button" type="button" value="C">
+                <button class="button" onclick="display('(')">(</button>
+                <button class="button" onclick="display(')')">)</button>
+                <input class="button" type="button" value="sqrt">
+                <input class="button" type="button" value="log">
+                <button class="button" onclick="switchToDeg()">deg">
+                <input class="button" type="button" value="x!">
+            </div>
+            <div class="num flex">
+                <input class="button" type="button" value="sin">
+                <input class="button" type="button" value="7">
+                <input class="button" type="button" value="8">
+                <input class="button" type="button" value="9">
+                <input class="button" type="button" value="cos">
+                <input class="button" type="button" value="4">
+                <input class="button" type="button" value="5">
+                <input class="button" type="button" value="6">
+                <input class="button" type="button" value="tan">
+                <input class="button" type="button" value="1">
+                <input class="button" type="button" value="2">
+                <input class="button" type="button" value="3">
+                <button class="button" onclick="switchToRad()">rad">
+                <input class="button" type="button" value="0">
+                <input class="button" type="button" value=".">
+                <input class="button" type="button" value="ans">
+            </div>
+        </aside>
+
+        <!-- Right Panel: Arithmetic and Equals Buttons -->
+        <aside class="flex">
+            <input class="button" type="button" value="%">
+            <input class="button" type="button" value="/">
+            <input class="button" type="button" value="*">
+            <input class="button" type="button" value="-">
+            <input class="button" type="button" value="+">
+            <input class="button" type="button" value="=">
+        </aside>
+    </main>
+    <script src="cal.js"></script>
+</body>
+</html>
